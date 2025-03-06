@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobile-app-development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header id="header" class="w-full bg-white z-[9] py-6 lg:py-10 m-0">
+      <div class="flex flex-row items-center px-[15px]">
+        <div>
+          <span
+            class="headerbtn w-[31px] border-t-[5px] border-black float-left mr-[26px] cursor-pointer my-auto"
+          >
+            <span class="block w-full h-[5px] bg-black mt-[5px]"></span>
+            <span class="block w-full h-[5px] bg-black mt-[5px]"></span>
+          </span>
+          <!-- toggle navbar -->
+          <div
+            class="demo fixed w-full h-screen left-0 top-0 z-50 bg-white transition-opacity duration-500 opacity-0 invisible"
+          >
+            <span
+              class="closebtn font-bold absolute top-14 left-7 h-8 w-8 before:content-[''] before:absolute before:h-0.5 before:w-full before:top-1/2 before:left-1/2 before:bg-black before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 after:content-[''] after:absolute after:h-0.5 after:w-full after:top-1/2 after:left-1/2 after:bg-black after:-translate-x-1/2 after:-translate-y-1/2 after:-rotate-45"
+            ></span>
+
+            <div class="flex flex-col md:flex-row">
+              <div
+                class="w-full md:w-[33%] px-20 py-14 xl:w-[26%] md:px-10 xl:px-20 md:pt-28 xl:pt-52 md:pb-10 xl:pb-28 bg-[#ef4036] md:h-screen grid grid-rows-[1fr_100px] justify-between"
+              >
+                <ul>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/about.html">About </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/services.html">Services </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/technologies.html">Technologies </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/blog.html"> Blog </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/contact.html"> Contact</a>
+                  </li>
+                </ul>
+                <div class="flex flex-row gap-5 my-9">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-facebook fb-clr" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="w-8 h-8"
+                      >
+                        <path
+                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="w-8 h-8"
+                      >
+                        <path
+                          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-[33%] xl:w-[25%] md:px-10 xl:px-20 md:pt-28 xl:pt-52 md:pb-10 xl:pb-28 h-screen hidden md:block bg-black"
+              >
+                <h2 class="text-[40px] text-white font-bold mb-4">Service</h2>
+                <ul>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/mobile-app-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Mobile App Development
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/ecommerce-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >E-Commerce
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/content-management-system.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                    >
+                      Content Management
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/Business-Intelligence.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                    >
+                      Business Intelligence
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/cloud-computing-service.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Cloud
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/odoo-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Odoo
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/marketing-strategy-consultants.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Seo and Digital Marketing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:w-[33%] xl:w-[48%]">
+                <div
+                  class="relative px-10 py-10 md:pt-28 xl:py-[78px] md:pr-10 xl:pr-[78px] md:pl-20 xl:pl-[130px] md:h-screen flex flex-col"
+                >
+                  <img
+                    src="../src/images/toggle-navmenu-img.png"
+                    alt=""
+                    class="mx-auto mb-[130px] w-[45%] md:w-[65%]"
+                  />
+                  <a
+                    href="../dist/contact.html"
+                    class="text-3xl lg:text-[40px] text-black mx-auto font-bold after:content-['>'] after:absolute after:px-4 after:text-red-500 after:font-normal"
+                    >Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- toggle navbar -->
+        </div>
+        <div class="hidden flex-row md:flex">
+          <ul class="flex flex-row items-center">
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/about.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  About
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block mr-5 align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  About
+                </a>
+              </div>
+            </li>
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/services.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  Services
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block mr-5 align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  Services
+                </a>
+              </div>
+            </li>
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/technologies.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  Technologies
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  Technologies
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="absolute left-0 right-0 mx-auto max-w-[120px] lg:max-w-[233px]"
+        >
+          <a href="../dist/index.html"
+            ><img
+              src="../src/images/logo.png"
+              alt="aranv"
+              title="aranv"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="ml-auto">
+          <a
+            href="../dist/contact.html"
+            class="relative hidden md:block ml-auto min-w-[140px] lg:min-w-[199px] text-white lg:h-[58px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] hover:text-white overflow-hidden bg-[linear-gradient(to_right,_black_50%,_red_50%)] transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
+          >
+            <span
+              class="block text-center text-[16px] font-bold transition-all duration-600 ease-out"
+            >
+              Get in Touch
+            </span>
+          </a>
+          <a href="../dist/contact.html" class="ml-auto">
+            <img
+              src="../src/images/get-in-touch.png"
+              alt=""
+              class="md:hidden block w-14 h-14 border-[1px] border-black p-[6px] rounded-full"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="bg-center bg-cover bg-no-repeat min-h-[531px] relative w-full overflow-hidden] bg-black flex items-center pt-10 before:content-[''] before:absolute before:inset-0 before:bg-[rgba(23,23,23,0.76)] before:-z-1"
+    >
+      <div class="max-w-[1200px] w-full px-[15px] mx-auto relative">
+        <div class="max-w-[710px]">
+          <h1
+            class="text-2xl sm:text-3xl md:text-5xl lg:text-[80px] text-white font-bold mb-3 md:mb-8 lg:mb-11 lg:leading-[82px]"
+          >
+            Mobile App Development that Connects
+          </h1>
+          <p class="text-2xl max-w-[312px] text-white mb-6">
+            Our apps connect with your customers for better UX
+          </p>
+          <div class="text-white font-bold">
+            <a href="../dist/index.html" class="after:content-['/'] after:px-2"
+              >Home</a
+            >
+            <a
+              href="../dist/services.html"
+              class="after:content-['/'] after:px-2"
+            >
+              Services</a
+            >
+            <span>Services Mobile App Development</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-no-repeat max-w-[380px] xl:max-w-[749px] mr-[3%] w-full absolute top-auto bottom-0 right-0 mb-4 hidden lg:block"
+      >
+        <img
+          src="../src/images/mobile-development-banner-right-img.png"
+          title="Run Business uninterruptedly with High-tech Solutions"
+          alt="Run Business uninterruptedly with High-tech Solutions"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <section>
+      <div class="w-full lg:relative">
+        <div
+          class="lg:absolute top-0 p-4 lg:p-0 right-0 bg-no-repeat lg:h-[656px] lg:w-[46%]"
+        >
+          <img src="../src/images/operational-efficiency.jpg" alt="" />
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto px-[15px] lg:h-[656px] flex lg:items-center"
+        >
+          <div class="lg:max-w-[600px] py-4 lg:py-0 lg:pr-5">
+            <h2
+              class="text-2xl md:text-[40px] md:leading-[48px] font-bold my-4 md:my-10"
+            >
+              Increase your efficiency to deliver the best products
+            </h2>
+            <p class="text-[#424242] mx-auto text-[20px] leading-[26px] mb-4">
+              We are a mobile app development company helping businesses to
+              build fully customized mobile apps with minimal time and cost
+              investment. Aranv is the first choice whether you are looking to
+              create an app for iOS, Android, Windows Mobile or to build a
+              cross-platform app.
+            </p>
+            <p class="text-[#424242] mx-auto text-[20px] leading-[26px]">
+              As smartphones and mobile devices have become ubiquitous, mobile
+              app development has seen an upward spurt. Mobile technology has
+              transformed everything around us. With the tremendous growth in
+              smartphone users, every business is taking advantage of the
+              technology that comes with these devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-8 sm:pt-10 md:pt-16 lg:pt-20">
+      <div
+        class="max-w-[1200px] mx-auto px-[15px] mb-4 sm:mb-8 md:mb-12 lg:mb-28"
+      >
+        <h2 class="text-xl font-medium">We create Apps for</h2>
+      </div>
+      <div
+        class="max-w-[1200px] px-[15px] mx-auto bg-[#f5f5f5] py-8 md:py-10 lg:py-[60px] relative xl:before:content-[''] xl:before:absolute xl:before:top-0 xl:before:left-[-190px] xl:before:w-[220px] xl:before:h-full xl:before:-z-1 xl:before:bg-[#f5f5f5] xl:after:content-[''] xl:after:absolute xl:after:top-0 xl:after:-right-[190px] xl:after:w-[220px] xl:after:h-full xl:after:-z-1 xl:after:bg-[#f5f5f5]"
+      >
+        <ul
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-[31px]"
+        >
+          <li
+            class="w-full max-h-[438px] shadow-[5px_0_68px_rgba(0,0,0,0.16)] lg:-mt-32 z-40"
+          >
+            <div>
+              <img
+                src="../src/images/enterprise-apps.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="pt-[35px] pr-[27px] pb-[35px] pl-[44px]">
+              <h3 class="text-2xl font-bold mb-3">Enterprise Apps</h3>
+              <p class="text-[17px] text-[#424242] mb-3 leading-[26px]">
+                Get the most promising and efficient enterprise software /app to
+                help manage your large business. Easy to implement and efficient
+                for running an enterprise.
+              </p>
+            </div>
+          </li>
+          <li class="w-full max-h-[438px] shadow-[5px_0_68px_rgba(0,0,0,0.16)]">
+            <div>
+              <img
+                src="../src/images/business-apps.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="pt-[35px] pr-[27px] pb-[35px] pl-[44px]">
+              <h3 class="text-2xl font-bold mb-3">Business Apps</h3>
+              <p class="text-[17px] text-[#424242] mb-3 leading-[26px]">
+                Improve your day-to-day business operations using our unique
+                business applications recouping your Capital and operational
+                investment.
+              </p>
+            </div>
+          </li>
+          <li
+            class="w-full max-h-[438px] shadow-[5px_0_68px_rgba(0,0,0,0.16)] lg:mt-28"
+          >
+            <div>
+              <img
+                src="../src/images/consumers-apps.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="pt-[35px] pr-[27px] pb-[35px] pl-[44px]">
+              <h3 class="text-2xl font-bold mb-3">Consumers Apps</h3>
+              <p class="text-[17px] text-[#424242] mb-3 leading-[26px]">
+                Make your customers happy and delighted with improved
+                connectivity and feature-rich business apps. These help access
+                your business from any time anywhere.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-10 sm:pt-12 md:pt-20 lg:pt-28">
+      <div class="w-full lg:relative">
+        <div
+          class="lg:absolute p-4 lg:p-0 top-0 left-0 bg-no-repeat lg:h-[656px] lg:w-[46%]"
+        >
+          <img
+            src="../src/images/mobile-ios-app-development-service.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto px-[15px] min-h-[680px] flex items-center"
+        >
+          <div class="lg:max-w-[600px] py-4 lg:py-0 lg:pr-5 ml-auto">
+            <h2
+              class="text-2xl md:text-[40px] md:leading-[48px] font-bold my-4 md:my-10"
+            >
+              iOS App Development
+            </h2>
+            <p class="text-[#424242] mx-auto text-[20px] leading-[26px] mb-4">
+              We deliver full-service iOS development solutions. As the iPhone
+              dominates smartphone technology, it is the most looked-for service
+              to build iPhone apps on the App Store. Our team is reliable and
+              well accustomed to the latest tools and technologies. We also help
+              you create, develop and submit your app to the App Store. It is
+              the sole point of distribution for mobile apps on iOS and is
+              developed and maintained by Apple Inc.
+            </p>
+            <h4 class="font-semibold text-lg py-4 md:my-10 text-red-500">
+              What we Do
+            </h4>
+            <ul class="grid grid-cols-1 sm:grid-cols-2">
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iPhone App Development</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iOS App with MLKit</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iOS App with SiriKit</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iOS App Testing</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iPad App development</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Apple TV Apps</span>
+              </li>
+              <li
+                class="mr-6 font-bold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> iOS App with ARKit</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-10 sm:pt-12 md:pt-20 lg:pt-28">
+      <div class="w-full lg:relative">
+        <div
+          class="lg:absolute top-0 p-4 lg:p-0 right-0 bg-no-repeat lg:h-[656px] lg:w-[46%]"
+        >
+          <img
+            src="../src/images/mobile-android-app-development-service.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto px-[15px] min-h-[680px] flex items-center"
+        >
+          <div class="lg:max-w-[600px] py-4 lg:py-0 lg:pr-5">
+            <h2
+              class="text-2xl md:text-[40px] md:leading-[48px] font-bold my-4 md:my-10"
+            >
+              Android App Development
+            </h2>
+            <p class="text-[#424242] mx-auto text-[20px] leading-[26px] mb-4">
+              Aranv offers end-to-end is a well-versed Android development team.
+              Our team makes the most of the platform. As Android is the most
+              widely used mobile OS, it powers hundreds of millions of mobile
+              devices. It is a world-class platform for developing apps and
+              games for Android users. Android helps develop apps, games, and
+              other digital content. It is flexible and takes advantage of the
+              hardware capabilities available on the device.
+            </p>
+            <h4 class="font-semibold text-lg py-4 md:my-10 text-red-500">
+              What we Do
+            </h4>
+            <ul class="grid grid-cols-1 sm:grid-cols-2">
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Android Smartphone Apps</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Android Things Apps</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Android Apps with Dialogflow</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Android TV Apps</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Android Tablet Apps</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Chromebook Apps</span>
+              </li>
+              <li
+                class="mr-6 font-semibold text-lg mb-3 inline-block before:content-['>'] before:font-bold before:pr-2 before:text-red-500"
+              >
+                <span> Firebase Integration</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-10 sm:pt-12 md:pt-20 lg:pt-[110px]">
+      <div class="max-w-[1200px] px-[15px] mx-auto">
+        <h2
+          class="text-2xl md:text-4xl lg:text-[40px] font-bold mb-6 md:mb-10 lg:mb-[63px] md:leading-[48px] xl:w-1/2"
+        >
+          Full-Service Develpment from Specialized Developers
+        </h2>
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[31px]"
+        >
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+          >
+            <img
+              src="../src/images/desktop-mobile-full-service.png"
+              alt=" Cross Platforms Apps"
+              class="min-h-[44px] mx-auto md:mx-0 mb-8"
+            />
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              Cross Platforms Apps
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              Build a cross-platform application that can run on various
+              operating systems, instead of creating different app versions for
+              each platform.
+            </p>
+          </li>
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+          >
+            <img
+              src="../src/images/pwa-full-service.png"
+              alt="Progressive Web Apps"
+              class="min-h-[26px] mx-auto md:mx-0 w-[70px] mb-8"
+            />
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              Progressive Web Apps
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              We create progressive web apps for web browser APIs. You can also
+              feature it along with traditional progressive enhancement
+              strategy. Deliver a native app-like user experience to your
+              customers.
+            </p>
+          </li>
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+          >
+            <img
+              src="../src/images/hybrid-app-service.png"
+              alt="Hybrid Apps"
+              class="min-h-[44px] mx-auto md:mx-0 mb-8"
+            />
+
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              Hybrid Apps
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              We develop hybrid apps for web browsers and native applications
+              designed for a particular platform that needs to be installed on a
+              device.
+            </p>
+          </li>
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+          >
+            <img
+              src="../src/images/lonic-service.png"
+              alt="Ionic Apps"
+              class="min-h-[44px] mx-auto md:mx-0 mb-8"
+            />
+
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              Ionic Apps
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              We build production-ready mobile apps that take advantage of
+              Angular’s power and flexibility. Get customized progressive web
+              apps for better connectivity.
+            </p>
+          </li>
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+            w-full=""
+          >
+            <img
+              src="../src/images/reactjs-mobile-service.png"
+              alt=" React Native"
+              class="min-h-[44px] mx-auto md:mx-0 mb-8"
+            />
+
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              React Native
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              With the best-in-class JavaScript library, we create react native
+              apps combining the best parts of native development with React.
+            </p>
+          </li>
+          <li
+            class="w-full min-h-[392px] pt-[43px] pr-[37px] pb-[34px] pl-[40px] bg-[#f5f5f5] text-center md:text-left"
+          >
+            <img
+              src="../src/images/google-cloud-mobile-devep-service.png"
+              alt="Cloud Apps"
+              class="min-h-[44px] mx-auto md:mx-0 mb-8"
+            />
+
+            <h3 class="text-[25px] font-bold leading-[30px] mb-3">
+              Cloud Apps
+            </h3>
+            <p class="text-[17px] leading-[26px] text-[#424242]">
+              Simplify your functioning with extremely secure and cost-effective
+              cloud apps. Not only boost your business functioning but also your
+              employee productivity.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pt-8 md:pt-14 lg:pt-[69px] pb-8 md:pb-16 lg:pb-[115px]">
+      <div class="max-w-[1200px] mx-auto px-[15px]">
+        <div
+          class="max-w-[339px] w-full mx-auto min-h-[125px] bg-no-repeat flex flex-row gap-3 justify-center items-center"
+          style="background-image: url('../src/images/bg-proven.png')"
+        >
+          <div class="w-20 h-20">
+            <img
+              decoding="async"
+              src="../src/images/proven-experience-devloper1.png"
+              title="Proven Experience"
+              alt="Proven Experience"
+              loading="lazy"
+            />
+          </div>
+          <div class="w-20 h-20">
+            <img
+              decoding="async"
+              src="../src/images/proven-experience-devloper2.png"
+              title="Proven Experience"
+              alt="Proven Experience"
+              loading="lazy"
+            />
+          </div>
+          <div class="w-20 h-20">
+            <img
+              decoding="async"
+              src="../src/images/proven-experience-devloper3.png"
+              title="Proven Experience"
+              alt="Proven Experience"
+              loading="lazy"
+            />
+          </div>
+          <p></p>
+        </div>
+        <h2
+          class="text-2xl md:text-3xl lg:text-[42px] lg:leading-[48px] max-w-[771px] mx-auto my-5 font-semibold text-center"
+        >
+          Hire a Mobile App Development Company With Proven Expertise!
+        </h2>
+        <p class="text-base lg:text-[20px] text-center text-[#424242]">
+          Avail the services of the best app developers in the industry with
+          years of experience in the industry. We guarantee to save in terms of
+          time and money with no compromise on quality. We have the technical
+          ability and infrastructure to cater to almost all types of mobile
+          apps. Our solutions transform and help upgrade apps with the changing
+          platforms to gain maximum features and functionality.
+        </p>
+        <a
+          href="../dist/contact.html"
+          class="relative mx-auto max-w-[344px] mt-5 md:mt-20 text-red-500 h-[60px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] block overflow-hidden bg-[linear-gradient(to_right,_black_50%,_white_50%)] border-[1px] border-black transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
+        >
+          <span
+            class="block text-center text-[22px] font-normal transition-all duration-600 ease-out"
+          >
+            Hire Dedicated Experts
+          </span>
+        </a>
+      </div>
+      <p></p>
+    </section>
+    <div class="flex flex-row my-4 gap-4 px-4 items-center">
+      <div class="w-[2.3rem]">
+        <a href="">
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            class="border-r-2 border-black pr-1"
+          >
+            <path
+              fill="black"
+              d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="w-[2.3rem]">
+        <a href="">
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            class="border-r-2 border-black pr-1"
+          >
+            <path
+              fill="black"
+              d="M28 8.557a10 10 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.7 9.7 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.94 4.94 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a5 5 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174q-.476-.001-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.9 9.9 0 0 1-6.114 2.107q-.597 0-1.175-.068a13.95 13.95 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013q0-.32-.015-.637c.96-.695 1.795-1.56 2.455-2.55z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="w-[2.3rem]">
+        <a href="">
+          <svg
+            focusable="false"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="black"
+              d="M27 21.775v-9.9s-10.01 6.985-10.982 7.348C15.058 18.878 5 11.875 5 11.875v9.9c0 1.375.293 1.65 1.65 1.65h18.7c1.393 0 1.65-.242 1.65-1.65m-.017-11.841c0-1.002-.291-1.359-1.633-1.359H6.65c-1.38 0-1.65.429-1.65 1.43l.016.154s9.939 6.842 11 7.216C17.14 16.941 27 10.005 27 10.005z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <section>
+      <div
+        class="max-w-[1200px] text-lg px-4 mx-auto mb-6 sm:mb-12 md:mb-16 lg:mb-32 font-semibold"
+      >
+        Our Process
+      </div>
+      <div class="max-w-[1200px] px-4 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+          <div
+            class="w-full max-h-[527px] px-6 lg:px-[42px] py-8 lg:py-[48px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] lg:-mt-[44px] bg-white"
+          >
+            <i
+              ><img
+                src="../src/images/bulb.png"
+                alt=""
+                class="mb-[30px] after:content-['01']"
+            /></i>
+            <h2 class="text-xl lg:text-[30px] font-bold text-red-500 mb-4">
+              Consulting and App Strategy
+            </h2>
+            <p class="text-[20px] mb-4 text-[#424242] leading-[26px]">
+              Our Application Strategy is focused on bringing an alignment
+              between stakeholders and the goals of the application, choice of
+              technologies, and business needs. We evaluate frameworks and
+              mobile platforms to choose suitable options. We also conceptualize
+              the life cycle of the mobile app. The outcome of this cycle is an
+              Application strategy with a roadmap report.
+            </p>
+          </div>
+          <div
+            class="w-full max-h-[527px] px-6 lg:px-[42px] py-8 lg:py-[48px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] lg:mt-[132px] bg-white"
+          >
+            <i
+              ><img
+                src="../src/images/heart.png"
+                alt=""
+                class="mb-[30px] after:content-['02']"
+            /></i>
+            <h2 class="text-xl lg:text-[30px] font-bold text-red-500 mb-4">
+              UX/UI Design
+            </h2>
+            <p class="text-[20px] mb-4 text-[#424242]">
+              Mobile apps need a strong creative design for an amazing UI/UX
+              experience. Our team has developed the dexterity to build such
+              solutions. We have a dedicated UI / UX team with consumer,
+              business &amp; enterprise attention. Our team works on emerging
+              mobility technologies and we build solutions that accelerate time
+              to market.
+            </p>
+          </div>
+
+          <div
+            class="w-full max-h-[527px] px-6 lg:px-[42px] py-8 lg:py-[48px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] lg:-mt-[173px]"
+          >
+            <i
+              ><img
+                src="../src/images/code-development.png"
+                alt=""
+                class="mb-[30px] after:content-['03']"
+            /></i>
+            <h2 class="text-xl lg:text-[30px] font-bold text-red-500 mb-4">
+              Coding &amp; Development
+            </h2>
+            <p class="text-[20px] mb-4 text-[#424242]">
+              With mobile application development services, we provide
+              end-to-end mobile app designing, testing services, and development
+              services across multiple platforms. Our skilled developers have
+              years of experience in implementing mobile apps using mobile
+              implementation methodology that leads to mobile app deployments.
+            </p>
+          </div>
+
+          <div
+            class="w-full max-h-[527px] px-6 lg:px-[42px] py-8 lg:py-[48px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)]"
+          >
+            <i
+              ><img
+                src="../src/images/rocket.png"
+                alt=""
+                class="mb-[30px] after:content-['04']"
+            /></i>
+            <h2 class="text-xl lg:text-[30px] font-bold text-red-500 mb-4">
+              Testing and Delivery
+            </h2>
+            <p class="text-[20px] mb-4 text-[#424242]">
+              We perform end-to-end testing and delivery of the mobile apps. We
+              carry out manual and automated testing, as well as compatibility
+              testing. We test the server performance and on-device performance
+              along with security testing and cross-functional testing to make
+              sure we deliver the perfect mobile app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w-full lg:relative bg-black">
+        <div
+          class="lg:absolute top-0 p-4 lg:p-0 right-0 bg-no-repeat lg:h-[857px] lg:w-[49%]"
+        >
+          <img src="../src/images/bolding-work.jpg" alt="" />
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto pt-6 md:pt-16 lg:pt-[89px] pb-8 md:pb-16 lg:pb-[103px] px-[15px] lg:h-[857px]"
+        >
+          <div class="lg:max-w-[500px] py-4 lg:p-0 lg:pr-5">
+            <h2
+              class="text-[18px] font-bold text-white mb-4 md:mb-8 lg:mb-[40px]"
+            >
+              why us
+            </h2>
+            <div>
+              <div class="border-b-2 border-white">
+                <h3
+                  class="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  For Unsurpassed Experience
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  Aranv has excellent specially built for Mobility with experts
+                  in mobile technology. We have hands-on experience in
+                  developing almost every kind of mobile application.
+                </p>
+              </div>
+              <div class="border-b-2 border-white">
+                <h3
+                  class="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  Topmost iOS Developers
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  Our highly motivated and technically strong team of designers,
+                  developers, and testers have deep knowledge of iOS development
+                  environment along with SDK and APIs.
+                </p>
+              </div>
+              <div class="border-b-2 border-white">
+                <h3
+                  class="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  In House Code
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  Our expert developers create professional and superior in
+                  house software that allows them to build visually stunning and
+                  superior applications.
+                </p>
+              </div>
+              <div class="border-b-2 border-white">
+                <h3
+                  class="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  Custom Agile Development
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  We work on the latest mobile technology stack and produce
+                  enterprise-grade as well as consumer apps for diverse domains.
+                  Our customised services ensure higher satisfaction.
+                </p>
+              </div>
+              <div class="border-b-2 border-white">
+                <h3
+                  class="paragraphtext toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  Complete App Store Deployment
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  Our team has experience in developing visually attractive,
+                  fully functional, and efficient apps for iOS, Android, and
+                  others. This makes Aranv a complete app development and
+                  deployment company. We have research-driven market-oriented
+                  experts who add value to your product.
+                </p>
+              </div>
+
+              <div class="border-b-2 border-white">
+                <h3
+                  class="toggle-btn text-[25px] text-white font-bold pr-12 pb-10 pt-6 relative after:content-[''] after:absolute after:right-[21px] after:top-[38px] after:bg-[url('../src/images/contact-dropdown-arrow.png')] after:bg-no-repeat after:w-[14px] after:h-[9px] after:transition after:duration-300"
+                >
+                  Superior Maintenance &amp; Support services
+                </h3>
+                <p class="paragraphtext hidden text-white">
+                  We offer software augmentation and maintenance services by
+                  fixing glitches, streamlining and refinement services. Get
+                  superior support from the team.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-8 sm:py-16 md:py-[137px]">
+      <div class="max-w-[1200px] mx-auto px-[15px]">
+        <h2
+          class="text-xl md:text-[40px] font-bold md:leading-[48px] md:my-12 mx-auto max-w-[84%] text-center"
+        >
+          Are you looking for someone of this caliber? <br />You can rely on us
+          for all your mobile app-related needs!
+        </h2>
+        <div class="relative">
+          <a
+            href="../dist/contact.html"
+            class="relative mx-auto max-w-[170px] md:max-w-[285px] mt-5 md:mt-20 text-red-500 h-[60px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] block overflow-hidden bg-[linear-gradient(to_right,_black_50%,_white_50%)] border-[1px] border-black transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
+          >
+            <span
+              class="block text-center text-[22px] transition-all duration-600 ease-out"
+            >
+              Let’s Talk &gt;
+            </span>
+          </a>
+          <span
+            class="bg-[url('../src/images/square-plus-icon-shape.png')] w-[125px] h-[125px] absolute -top-[298px] -left-[127px] hidden xl:block"
+          ></span>
+          <span
+            class="bg-[url('../src/images/small-square-plus-shape.png')] bg-no-repeat w-[125px] h-[125px] absolute -top-[300px] right-0 hidden xl:block"
+          ></span>
+          <span
+            class="bg-[url('../src/images/horizontal-plus-shape.png')] w-[128px] h-4 absolute left-24 top-7 bg-no-repeat hidden xl:block"
+          ></span>
+          <span
+            class="bg-[url('../src/images/square-plus-icon-shape.png')] w-[125px] bg-no-repeat h-[125px] absolute bottom-0 -right-[284px] hidden xl:block"
+          ></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="min-h-[439px] lg:min-h-[760px] md:relative">
+        <div
+          style="background-image: url(../src/images/address-city-1.jpg)"
+          class="h-[439px] lg:h-[760px] w-full md:w-[60%] bg-no-repeat bg-cover"
+        ></div>
+        <div class="max-w-[1200px] mx-auto px-0 md:px-[15px] md:relative">
+          <div
+            class="w-full md:w-[400px] lg:w-[570px] lg:h-[477px] xl:h-[595px] p-8 md:p-10 lg:pt-[86px] lg:pr-[87px] lg:pb-[74px] lg:pl-[87px] bg-red-500 text-white md:absolute bottom-0 right-0 2xl:after:content-[''] 2xl:after:absolute 2xl:after:bg-gray-100 2xl:after:w-[61%] 2xl:after:h-full 2xl:after:left-full 2xl:after:top-0 2xl:after:-z-10"
+          >
+            <h4 class="text-[18px] mb-7 lg:mb-[70px]">Get in Touch</h4>
+            <strong class="block mt-2 text-[28px] mb-4 lg:mb-[32px]"
+              >5820 N Canton Center Rd, Suite 170, Canton MI 48187</strong
+            >
+            <div class="mb-6 border-b border-[#f7a09b] text-[18px]">
+              <label class="font-semibold">Call:</label>
+              <a href="tel:(347)460-9278‬" class="text-white">
+                (347) 460-9278‬</a
+              >
+            </div>
+            <div class="mb-6 border-b border-[#f7a09b] text-[18px]">
+              <label class="font-semibold">Skype:</label>
+              <a href="skype:sales.aranv?chat" class="text-white underline">
+                sales.aranv</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="pt-[50px] md:pt-[105px] pb-[35px] md:pb-[70px]">
+        <div
+          class="max-w-[1200px] mx-auto px-[15px] flex flex-col md:flex-row justify-between"
+        >
+          <div>
+            <div>
+              <a href="../dist/index.html"
+                ><img
+                  src="../src/images/logo.png"
+                  alt="aranv"
+                  title="aranv"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+          <div class="px-4">
+            <h3 class="text-lg font-medium text-[#424242] mb-4">Services</h3>
+            <div>
+              <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[30px]">
+                <!-- First column (5 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/mobile-app-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Mobile App Development
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/mobile-app-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Mobile App Development
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="./ecommerce-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        E-Commerce
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/ecommerce-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        E-Commerce
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        React JS
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        React JS
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Angular
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Angular
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Node JS
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Node JS
+                      </a>
+                    </div>
+                  </li>
+                </div>
+
+                <!-- Second column (4 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/cloud-computing-service.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Cloud
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/cloud-computing-service.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Cloud
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/marketing-strategy-consultants.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        SEO and Digital Marketing
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/marketing-strategy-consultants.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        SEO and Digital Marketing
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/content-management-system.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Content Management
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/content-management-system.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Content Management
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/Business-Intelligence.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Business Intelligence
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/Business-Intelligence.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Business Intelligence
+                      </a>
+                    </div>
+                  </li>
+                </div>
+
+                <!-- Third column (3 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        React Native
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        React Native
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/odoo-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Odoo
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/odoo-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Odoo
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/employee-retention-credit-free-assessment-and-consultation.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        ERC
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/employee-retention-credit-free-assessment-and-consultation.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        ERC
+                      </a>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#f5f5f5]">
+        <div class="max-w-[1200px] mx-auto pt-[24px] pb-[17px] px-[15px]">
+          <p class="mb-[15px] font-normal text-[14px]">
+            Aranv Consultancy &amp; Digital Services © 2021, All rights reserved
+            by the company.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelectorAll(".toggle-btn");
+      const para = document.querySelectorAll(".paragraphtext");
+
+      toggle.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          // Hide all paragraphs first
+          para.forEach((p) => {
+            p.classList.remove("block");
+            p.classList.add("hidden");
+          });
+          console.log("index", index);
+
+          // Show only the clicked paragraph
+          para[index].classList.remove("hidden");
+          para[index].classList.add("block");
+        });
+      });
+
+      const headerbutton = document.querySelector(".headerbtn");
+      const demo = document.querySelector(".demo");
+      const headerclosebtn = document.querySelector(".closebtn");
+
+      if (demo && headerbutton) {
+        headerbutton.addEventListener("click", () => {
+          demo.classList.toggle("opacity-100");
+          demo.classList.toggle("visible");
+          demo.classList.toggle("opacity-0");
+          demo.classList.toggle("invisible");
+        });
+      }
+
+      if (headerclosebtn) {
+        headerclosebtn.addEventListener("click", () => {
+          demo.classList.toggle("opacity-100");
+          demo.classList.toggle("visible");
+          demo.classList.toggle("opacity-0");
+          demo.classList.toggle("invisible");
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header id="header" class="w-full bg-white z-[9] py-6 lg:py-10 m-0">
+      <div class="flex flex-row items-center px-[15px]">
+        <div>
+          <span
+            class="headerbtn w-[31px] border-t-[5px] border-black float-left mr-[26px] cursor-pointer my-auto"
+          >
+            <span class="block w-full h-[5px] bg-black mt-[5px]"></span>
+            <span class="block w-full h-[5px] bg-black mt-[5px]"></span>
+          </span>
+          <!-- toggle navbar -->
+          <div
+            class="demo fixed w-full h-screen left-0 top-0 z-50 bg-white transition-opacity duration-500 opacity-0 invisible"
+          >
+            <span
+              class="closebtn font-bold absolute top-14 left-7 h-8 w-8 before:content-[''] before:absolute before:h-0.5 before:w-full before:top-1/2 before:left-1/2 before:bg-black before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 after:content-[''] after:absolute after:h-0.5 after:w-full after:top-1/2 after:left-1/2 after:bg-black after:-translate-x-1/2 after:-translate-y-1/2 after:-rotate-45"
+            ></span>
+
+            <div class="flex flex-col md:flex-row">
+              <div
+                class="w-full md:w-[33%] px-20 py-14 xl:w-[26%] md:px-10 xl:px-20 md:pt-28 xl:pt-52 md:pb-10 xl:pb-28 bg-[#ef4036] md:h-screen grid grid-rows-[1fr_100px] justify-between"
+              >
+                <ul>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/about.html">About </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/services.html">Services </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/technologies.html">Technologies </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/blog.html"> Blog </a>
+                  </li>
+                  <li
+                    class="text-2xl lg:text-[40px] text-white font-normal mb-3"
+                  >
+                    <a href="../dist/contact.html"> Contact</a>
+                  </li>
+                </ul>
+                <div class="flex flex-row gap-5 my-9">
+                  <a href="#" target="_blank">
+                    <i class="fa fa-facebook fb-clr" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="w-8 h-8"
+                      >
+                        <path
+                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </a>
+
+                  <a href="#" target="_blank">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="w-8 h-8"
+                      >
+                        <path
+                          d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="w-[33%] xl:w-[25%] md:px-10 xl:px-20 md:pt-28 xl:pt-52 md:pb-10 xl:pb-28 h-screen hidden md:block bg-black"
+              >
+                <h2 class="text-[40px] text-white font-bold mb-4">Service</h2>
+                <ul>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/mobile-app-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Mobile App Development
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/ecommerce-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >E-Commerce
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/content-management-system.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                    >
+                      Content Management
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/Business-Intelligence.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                    >
+                      Business Intelligence
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/cloud-computing-service.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Cloud
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/odoo-development.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Odoo
+                    </a>
+                  </li>
+                  <li
+                    class="relative text-lg font-semibold pr-5 border-b-[1px] border-gray-400 py-4 mb-3 text-white"
+                  >
+                    <a
+                      href="../dist/marketing-strategy-consultants.html"
+                      class="after:content-['>'] after:absolute after:right-0 after:text-red-500 after:font-bold"
+                      >Seo and Digital Marketing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="md:w-[33%] xl:w-[48%]">
+                <div
+                  class="relative px-10 py-10 md:pt-28 xl:py-[78px] md:pr-10 xl:pr-[78px] md:pl-20 xl:pl-[130px] md:h-screen flex flex-col"
+                >
+                  <img
+                    src="../src/images/toggle-navmenu-img.png"
+                    alt=""
+                    class="mx-auto mb-[130px] w-[45%] md:w-[65%]"
+                  />
+                  <a
+                    href="../dist/contact.html"
+                    class="text-3xl lg:text-[40px] text-black mx-auto font-bold after:content-['>'] after:absolute after:px-4 after:text-red-500 after:font-normal"
+                    >Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- toggle navbar -->
+        </div>
+        <div class="hidden flex-row md:flex">
+          <ul class="flex flex-row items-center">
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/about.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  About
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block mr-5 align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  About
+                </a>
+              </div>
+            </li>
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/services.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  Services
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block mr-5 align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  Services
+                </a>
+              </div>
+            </li>
+            <li class="mr-5">
+              <div class="relative inline-block cursor-pointer group">
+                <!-- Original Text -->
+                <a
+                  href="../dist/technologies.html"
+                  class="text-[#6a6a6a] text-lg font-medium relative block"
+                >
+                  Technologies
+                </a>
+
+                <!-- Hover Effect Text -->
+                <a
+                  href="#"
+                  class="absolute top-0 left-0 text-[#ef4036] text-lg font-medium inline-block align-middle w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                >
+                  Technologies
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="absolute left-0 right-0 mx-auto max-w-[120px] lg:max-w-[233px]"
+        >
+          <a href="../dist/index.html"
+            ><img
+              src="../src/images/logo.png"
+              alt="aranv"
+              title="aranv"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="ml-auto">
+          <a
+            href="../dist/contact.html"
+            class="relative hidden md:block ml-auto min-w-[140px] lg:min-w-[199px] text-white lg:h-[58px] px-[10px] py-[5px] text-[18px] leading-[46px] rounded-[30px] hover:text-white overflow-hidden bg-[linear-gradient(to_right,_black_50%,_red_50%)] transition-all duration-500 ease-out bg-[size:200%_100%] bg-[position:right_bottom] hover:bg-[position:left_bottom]"
+          >
+            <span
+              class="block text-center text-[16px] font-bold transition-all duration-600 ease-out"
+            >
+              Get in Touch
+            </span>
+          </a>
+          <a href="../dist/contact.html" class="ml-auto">
+            <img
+              src="../src/images/get-in-touch.png"
+              alt=""
+              class="md:hidden block w-14 h-14 border-[1px] border-black p-[6px] rounded-full"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="bg-center bg-cover bg-no-repeat min-h-[353px] relative w-full overflow-hidden] flex items-center pt-10"
+      style="background-image: url('../src/images/company-banner.jpg')"
+    >
+      <div class="max-w-[1200px] w-full px-[15px] mx-auto">
+        <div class="max-w-[850px]">
+          <h1 class="text-7xl text-white font-bold leading-[82px] mb-4">
+            About
+          </h1>
+          <div class="text-white font-bold">
+            <a href="../dist/index.html" class="after:content-['/'] after:px-2"
+              >Home</a
+            >
+            <span>About</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="pt-[52px]">
+      <div class="max-w-[1200px] mx-auto px-[15px]">
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center"
+        >
+          <div class="w-full md:w-[54%] mt-5 md:mt-0">
+            <div class="mb-6 md:mb-12 font-bold">What We Do</div>
+            <h2
+              class="text-2xl md:text-[40px] font-bold mb-3 leading-[28px] md:leading-[54px]"
+            >
+              We deliver 360-degree Web Solutions to Business
+            </h2>
+            <p class="text-[21px] text-[#424242] mb-14">
+              We have been in the business for 7 years now and know the ins and
+              outs of tech-industry and web requirements of any business. We
+              offer the most suitable and innovative business solutions to help
+              you grow fast and sustain in this competitive ecosystem.
+            </p>
+          </div>
+          <div class="w-full md:w-[38%]">
+            <i
+              ><img
+                src="../src/images/advanced-technologies-img.png"
+                alt="advanced-technologies-img"
+            /></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-11 md:my-0">
+      <div class="bg-[#f5f5f5]">
+        <div class="bg-white pb-24">
+          <div class="max-w-[1200px] px-4 mx-auto text-xl font-medium">
+            How We Do
+          </div>
+        </div>
+        <div class="max-w-[1200px] px-4 mx-auto">
+          <div class="flex flex-col md:flex-row flex-wrap justify-between">
+            <div
+              class="w-full md:w-[48%] h-[323px] md:h-[457px] p-7 md:px-10 md:py-8 md-lg:px-[72px] md-lg:py-[61px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] mt-[-44px] bg-white"
+            >
+              <i
+                ><img
+                  src="../src/images/heart.png"
+                  alt=""
+                  class="mb-4 md:mb-[30px] after:content-['01']"
+              /></i>
+              <h2 class="text-xl md:text-[30px] text-red-500 mb-4">
+                Passion to Serving
+              </h2>
+              <p class="text-base sm:text-[20px] mb-4 text-[#424242]">
+                Our passion for serving our clients the best way is our
+                strength. This sets us apart as we go the extra mile to serve
+                you anytime, anywhere with equal passion and compassion.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-[48%] h-[323px] md:h-[457px] p-7 md:px-10 md:py-8 md-lg:px-[72px] md-lg:py-[61px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] md:mt-[132px] bg-white"
+            >
+              <i
+                ><img
+                  src="../src/images/bulb.png"
+                  alt=""
+                  class="mb-4 md:mb-[30px] after:content-['02']"
+              /></i>
+              <h2 class="text-xl md:text-[30px] text-red-500 mb-4">
+                Innovative Aptitude
+              </h2>
+              <p class="text-base sm:text-[20px] mb-4 text-[#424242]">
+                Innovation is the best way to compete. We leave no stone
+                unturned to be the best fit. Innovation is everywhere – in our
+                thought, process, approach, and delivery.
+              </p>
+            </div>
+
+            <div
+              class="w-full md:w-[48%] h-[323px] md:h-[457px] p-7 md:px-10 md:py-8 md-lg:px-[72px] md-lg:py-[61px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)] md:-mt-[173px]"
+            >
+              <i
+                ><img
+                  src="../src/images/heart.png"
+                  alt=""
+                  class="mb-4 md:mb-[30px] after:content-['03']"
+              /></i>
+              <h2 class="text-xl md:text-[30px] text-red-500 mb-4">
+                Ethical Charter
+              </h2>
+              <p class="text-base sm:text-[20px] mb-4 text-[#424242]">
+                We have laid out a detailed ethical code. It sails us through
+                every project with equal ease. You get the most ethical,
+                friendly, and easy access to a team of experts.
+              </p>
+            </div>
+
+            <div
+              class="w-full md:w-[48%] h-[323px] md:h-[457px] p-7 md:px-10 md:py-8 md-lg:px-[72px] md-lg:py-[61px] mb-10 shadow-[5px_0_68px_rgba(0,0,0,0.16)]"
+            >
+              <i
+                ><img
+                  src="../src/images/bulb.png"
+                  alt=""
+                  class="mb-4 md:mb-[30px] after:content-['04']"
+              /></i>
+              <h2 class="text-xl md:text-[30px] text-red-500 mb-4">
+                Best-of-Art Infrastructure
+              </h2>
+              <p class="text-base sm:text-[20px] mb-4 text-[#424242]">
+                Be it technology, tools, systems, integration, reporting, or
+                follow-up – we have the most updated tools and mechanisms to
+                bring you the best technology solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 md:py-[88px] bg-[#f9f8f8]">
+      <div class="max-w-[1200px] w-full mx-auto px-[15px]">
+        <div class="mb-12 font-bold">Who We Are</div>
+        <h2
+          class="max-w-[900px] text-2xl md:text-[44px] font-bold pr-7 mb-14 leading-[30px] md:leading-[50px]"
+        >
+          A unique squad of technocrats to serve the most profitable and
+          sustainable business solutions.
+        </h2>
+        <i
+          class="w-[120px] md:w-[200px] h-[120px] md:h-[200px] bg-red-500 flex items-center justify-center -mt-[200px] ml-auto"
+        >
+          <img
+            src="../src/images/cart.png"
+            alt="Cutting-edge Web Development Solutions"
+            title="Cutting-edge Web Development Solutions"
+            loading="lazy"
+            class="w-1/2"
+          />
+        </i>
+
+        <div class="max-w-[970px] w-full bg-red-500 flex flex-row flex-wrap">
+          <img src="../src/images/creative-approach-img.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="w-full md:relative bg-black">
+        <div
+          class="max-w-[1200px] mx-auto pt-10 md:pt-[89px] pb-10 md:pb-[103px] px-[15px] md:h-[857px]"
+        >
+          <div class="max-w-full md:max-w-[500px] pr-5">
+            <h2 class="text-[18px] font-bold text-white mb-5 md:mb-[40px]">
+              why us
+            </h2>
+            <h3
+              class="text-2xl md:text-[40px] font-bold text-red-500 mb-[21px]"
+              style="line-height: 39px"
+            >
+              We’re Technology Partners
+            </h3>
+            <p class="text-[#818181] text-[18px] mb-5 md:mb-[40px]">
+              Being a web development company, we have a dedicated team of
+              technocrats who are experts in their respective domains. We
+              deliver solutions that help thrive and sustain your business for
+              longer.
+            </p>
+            <h3
+              class="text-2xl md:text-[40px] font-bold text-red-500 mb-[21px]"
+            >
+              We Collaborate
+            </h3>
+            <p class="text-[#818181] text-[18px] mb-5 md:mb-[40px]">
+              Our association with business brings a unique set of innovative
+              technology solutions that gives you an edge over others. Making
+              your business stay ahead of the competition.
+            </p>
+            <h3
+              class="text-2xl md:text-[40px] font-bold text-red-500 mb-[21px]"
+            >
+              We help build business
+            </h3>
+            <p class="text-[#818181] text-[18px]">
+              We are business enablers. Easy to reach and collaborate but
+              difficult to ignore. Our business bonding sustains and sails
+              through the rough patch of your business also.
+            </p>
+          </div>
+        </div>
+        <div
+          style="background-image: url('../src/images/bolding-work.jpg')"
+          class="md:absolute top-0 right-0 bg-no-repeat h-[500px] md:h-[857px] bg-center w-full md:w-[49%]"
+        ></div>
+      </div>
+    </section>
+    <section class="pt-10 pb-10 md:pt-[89px] md:pb-[94px]">
+      <div class="max-w-[1612px] mx-auto px-[15px]">
+        <div class="mb-8 md:mb-[58px] ml-3 md:ml-[204px] text-[18px]">
+          Our Culture
+        </div>
+        <div class="flex flex-col md:gap-0 gap-4 md:flex-row justify-between">
+          <div class="w-full md:w-[507px]">
+            <img src="../src/images/culture1.jpg" alt="" />
+          </div>
+          <div class="w-full md:w-[507px]">
+            <img src="../src/images/culture2.jpg" alt="" />
+          </div>
+          <div class="w-full md:w-[507px]">
+            <img src="../src/images/culture3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="min-h-[439px] lg:min-h-[760px] md:relative">
+        <div
+          style="background-image: url(../src/images/address-city-1.jpg)"
+          class="h-[439px] lg:h-[760px] w-full md:w-[60%] bg-no-repeat bg-cover"
+        ></div>
+        <div class="max-w-[1200px] mx-auto px-0 md:px-[15px] md:relative">
+          <div
+            class="w-full md:w-[400px] lg:w-[570px] lg:h-[477px] xl:h-[595px] p-8 md:p-10 lg:pt-[86px] lg:pr-[87px] lg:pb-[74px] lg:pl-[87px] bg-red-500 text-white md:absolute bottom-0 right-0 2xl:after:content-[''] 2xl:after:absolute 2xl:after:bg-gray-100 2xl:after:w-[61%] 2xl:after:h-full 2xl:after:left-full 2xl:after:top-0 2xl:after:-z-10"
+          >
+            <h4 class="text-[18px] mb-7 lg:mb-[70px]">Get in Touch</h4>
+            <strong class="block mt-2 text-[28px] mb-4 lg:mb-[32px]"
+              >5820 N Canton Center Rd, Suite 170, Canton MI 48187</strong
+            >
+            <div class="mb-6 border-b border-[#f7a09b] text-[18px]">
+              <label class="font-semibold">Call:</label>
+              <a href="tel:(347)460-9278‬" class="text-white">
+                (347) 460-9278‬</a
+              >
+            </div>
+            <div class="mb-6 border-b border-[#f7a09b] text-[18px]">
+              <label class="font-semibold">Skype:</label>
+              <a href="skype:sales.aranv?chat" class="text-white underline">
+                sales.aranv</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="pt-[50px] md:pt-[105px] pb-[35px] md:pb-[70px]">
+        <div
+          class="max-w-[1200px] mx-auto px-[15px] flex flex-col md:flex-row justify-between"
+        >
+          <div>
+            <div>
+              <a href="../dist/index.html"
+                ><img
+                  src="../src/images/logo.png"
+                  alt="aranv"
+                  title="aranv"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+          <div class="px-4">
+            <h3 class="text-lg font-medium text-[#424242] mb-4">Services</h3>
+            <div>
+              <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-[30px]">
+                <!-- First column (5 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/mobile-app-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Mobile App Development
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/mobile-app-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Mobile App Development
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="./ecommerce-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        E-Commerce
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/ecommerce-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        E-Commerce
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        React JS
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        React JS
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Angular
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Angular
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Node JS
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Node JS
+                      </a>
+                    </div>
+                  </li>
+                </div>
+
+                <!-- Second column (4 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/cloud-computing-service.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Cloud
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/cloud-computing-service.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Cloud
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/marketing-strategy-consultants.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        SEO and Digital Marketing
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/marketing-strategy-consultants.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        SEO and Digital Marketing
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/content-management-system.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Content Management
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/content-management-system.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Content Management
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/Business-Intelligence.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Business Intelligence
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/Business-Intelligence.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Business Intelligence
+                      </a>
+                    </div>
+                  </li>
+                </div>
+
+                <!-- Third column (3 items) -->
+                <div>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        React Native
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/technologies.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        React Native
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/odoo-development.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        Odoo
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/odoo-development.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        Odoo
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pr-4 mb-1">
+                    <div class="relative inline-block cursor-pointer group">
+                      <!-- Original Text -->
+                      <a
+                        href="../dist/employee-retention-credit-free-assessment-and-consultation.html"
+                        class="text-black text-base font-medium relative block"
+                      >
+                        ERC
+                      </a>
+
+                      <!-- Hover Effect Text -->
+                      <a
+                        href="../dist/employee-retention-credit-free-assessment-and-consultation.html"
+                        class="absolute top-0 left-0 text-[#ef4036] text-base font-medium w-0 overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-out group-hover:w-full pointer-events-none"
+                      >
+                        ERC
+                      </a>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#f5f5f5]">
+        <div class="max-w-[1200px] mx-auto pt-[24px] pb-[17px] px-[15px]">
+          <p class="mb-[15px] font-normal text-[14px]">
+            Aranv Consultancy &amp; Digital Services © 2021, All rights reserved
+            by the company.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const headerbutton = document.querySelector(".headerbtn");
+      const demo = document.querySelector(".demo");
+      const headerclosebtn = document.querySelector(".closebtn");
+
+      if (demo && headerbutton) {
+        headerbutton.addEventListener("click", () => {
+          demo.classList.toggle("opacity-100");
+          demo.classList.toggle("visible");
+          demo.classList.toggle("opacity-0");
+          demo.classList.toggle("invisible");
+        });
+      }
+
+      if (headerclosebtn) {
+        headerclosebtn.addEventListener("click", () => {
+          demo.classList.toggle("opacity-100");
+          demo.classList.toggle("visible");
+          demo.classList.toggle("opacity-0");
+          demo.classList.toggle("invisible");
+        });
+      }
+    </script>
+  </body>
+</html>
